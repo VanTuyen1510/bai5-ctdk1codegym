@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xếp hạng học lực học sinh</title>
+</head>
+<body>
+<h1>Bài 5 :</h1>
+</body>
+<script>
+    let testMarks = +prompt("Điểm bài kiểm tra của bạn là :");
+    let midTerm = +prompt("Điểm thi giữa kỳ của bạn là :");
+    let endOfTerm = +prompt("Điểm thi cuối kỳ của bạn là :");
+    let ratings = (testMarks + midTerm + endOfTerm)/3;
+    if(ratings <= 10  && ratings >= 9){
+        alert("Chúc mừng bạn được xếp hạng A");
+    }else if(ratings < 9 && ratings >= 7){
+        alert("Bạn được xếp hạng B");
+    }else if(ratings < 7 && ratings >= 5){
+        alert("Bạn được xếp hạng C");
+    }else if(ratings < 5) {
+        alert("Bạn được xếp hạng F");
+    }else {
+        alert("Điểm số bạn nhập vào không hợp lệ !");
+    }
+</script>
+</html>
